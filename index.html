@@ -136,6 +136,39 @@
         </div>
       </div>
 
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyborads</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name mt-3">Keychron</h4>
+                <img src="/img/keyboard/keyboard1.png" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name mt-3">Keychron</h4>
+                <img src="/img/keyboard/keyboard2.png" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name mt-3">Keychron</h4>
+                <img src="/img/keyboard/keyboard3.png" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -292,6 +325,15 @@
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
       gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5 });
+    </script>
+
+    <script src="script/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 400,
+        glare: true,
+      });
     </script>
 
     <script>
